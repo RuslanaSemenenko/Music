@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <title>Music🎸</title>
+</head>
+<body>
+  <div class="content">
+    <div class="top-bar active">
+      
+      <span class="material-symbols-rounded faq-toggle">expand_more</span>
+      <span>Now Playing</span>
+      <!-- <span class="material-symbols-outlined">more_horiz</span> -->
+      <div class="night-toggle" onClick="switchMode()">
+      <div id="moon" class="moon"></div>
+      </div>
+    </div>
+    <div class="image-wrapper">
+      <div class="music-image">
+        <img src="https://source.unsplash.com/230x230?music">
+      </div>
+    </div>
+    <div class="music-titles">
+      <p class="name">The-Weeknd-Call-out-my-name</p>
+      <p class="artist">The-Weeknd</p>
+    </div>
+    <div class="progress-details">
+      <div class="progress-bar">
+        <span></span>
+      </div>
+      <div class="time">
+        <span class="current">0:00</span>
+        <span class="final">3:59</span>
+      </div>
+    </div>
+    <div class="control-btn">
+      <span class="material-symbols-outlined" id="repeat">repeat</span>
+      <span class="material-symbols-outlined" id="prev">skip_previous</span>
+      <div class="play-pause">
+        <span class="material-symbols-outlined">play_arrow</span>
+      </div>
+      <span class="material-symbols-outlined" id="next">skip_next</span>
+      <span class="material-symbols-outlined" id="shuffle">shuffle</span>
+    </div>
+  </div>
+
+  <audio src="music/The-Weeknd-Call-out-my-name.mp3" class="main-song"></audio>
+
+  <script src="./js/playlist.js"></script>
+  <script src="./js/script.js"></script>
+  
+
+</body>
+</html>
